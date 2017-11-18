@@ -87,7 +87,7 @@ google_ad_slot           : "2741110476"
 # Site Author
 author:
   name             : "Flavio Aiello"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "assets/images/me.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Husband, father of two. Cycling addicted. Passionate technologist and family guy. Researching the most promising shifts in business and technology."
   location         : "Zurich, Switzerland"
   email            :
