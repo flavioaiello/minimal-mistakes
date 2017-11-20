@@ -243,6 +243,14 @@
         </li>
       {% endif %}
 
+      {% if author.strava %}
+        <li>
+          <a href="https://twitter.com/{{ author.strava }}" itemprop="sameAs">
+            <i class="fa fa-fw fa-strava-square" aria-hidden="true"></i> Twitter
+          </a>
+        </li>
+      {% endif %}
+
       {% include author-profile-custom-links.html %}
     </ul>
   </div>
