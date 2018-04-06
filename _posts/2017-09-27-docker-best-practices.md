@@ -1,4 +1,4 @@
-# A collection of recurring snippets to write stable and resilient Dockerfiles for production
+*A collection of recurring snippets to write stable and resilient Dockerfiles for production*
 
 This post is based on the [blueprint repository on github](https://github.com/flavioaiello/docker-blueprint "The docker best practices blueprint")
 
