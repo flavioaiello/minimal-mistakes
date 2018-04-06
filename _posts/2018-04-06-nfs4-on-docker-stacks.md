@@ -30,8 +30,7 @@ volumes:
       device: "192.168.1.100:/nfs_data/${CONTEXT}/databases/mariadb"
 ...
 ```
-
-Starting you stack as usual `docker stack deploy -c docker-compose.yml mystack` creates the named volume as expected on every required node. If a container will be rescheduled on another node, then Swarm will take care of the volume, eg. will recreate the volume mount on the other node.
+The statement `docker stack deploy -c docker-compose.yml mystack` starts your stack as usual and creates the named volume as expected on every required node. If a container will be rescheduled on another node, then Swarm will take care of the volume, eg. will recreate the volume mount on the other node.
 
 ```
 $ docker volume ls
