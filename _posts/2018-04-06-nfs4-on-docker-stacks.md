@@ -1,4 +1,4 @@
-Volumes are required whenever the container state must be preserved between redeployments. There are plenty of blog posts out there about Docker Volumes and also the recommended [Docker Docs](https://docs.docker.com/storage/volumes/) sites.
+Volumes are required whenever the container state must be preserved between deployments. There are plenty of blog posts out there about Docker Volumes and also the recommended [Docker Docs](https://docs.docker.com/storage/volumes/) sites.
 
 When it comes to Docker Stacks and NFS4, there is much confusion. The `docker-compose.yml` file below is the result of few hours of research, as it seems to be undocumented. Starting with `Version: 3.2`, the local driver supports type `NFS` and `NFS4` without any further installation of volume plugins. The default mount options like `rw`, `hard` etc. seem to be set during the mount operation.
 
