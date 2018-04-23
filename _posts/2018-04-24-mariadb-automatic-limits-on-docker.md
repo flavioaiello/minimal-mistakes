@@ -38,4 +38,4 @@ sed -e "/innodb_buffer_pool_size[^_]\s*/c\innodb_buffer_pool_size = $(awk '{ pri
 ...
 ```
 
-The above sources can be found on Github and the custom mariadb docker images on Docker Hub.
+The above sources can be found on [Github](https://github.com/flavioaiello/MariaDB) and the custom mariadb docker images on [Docker Hub](https://hub.docker.com/r/flavioaiello/mariadb/).
