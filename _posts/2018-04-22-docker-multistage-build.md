@@ -2,9 +2,8 @@ Building software sources and their according runtime containers are two differe
 
 How CI/CD systems handled their propiertary build approach becomes now also portable. Build reports can simply be exposed by mounting volumes to the build system workspace, thus offering the same level of usability as usual.
 
+## Examples
 Below we see two different examples how to accomplish multistage building.
-
-## Examples
 
 ### Java
 ```
@@ -58,7 +57,7 @@ EXPOSE 8080
 CMD ["/usr/local/bin/serve", "-p", "8080", "-d", "/wwwroot"]
 ```
 ## Automation
-Jenkinsfiles become very simple when using the multistage build feature:
+When using the multistage build feature with Jenkins 2.x, the main concern of the Jenkinsfile in each repository remains the Dockerfile build. 
 ```
 #!groovy
 
