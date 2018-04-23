@@ -41,7 +41,7 @@ CMD ["java","/usr/local/bin/myapp.jar"]
 ```
 ### Source build - the following "build" label is used in the runtime stage below
 FROM golang:1.10 as build
-COPY src /
+COPY build /build
 WORKDIR /build
 RUN go get -d -v -t;\
     CGO_ENABLED=0 GOOS=linux go build -v -o /usr/local/bin/serve
@@ -57,7 +57,7 @@ EXPOSE 8080
 CMD ["/usr/local/bin/serve", "-p", "8080", "-d", "/wwwroot"]
 ```
 ## Automation
-When using the multistage build feature with Jenkins 2.x, the main concern of the Jenkinsfile in each repository remains the Dockerfile build. 
+When using the multistage build feature with Jenkins 2.x, the main concern of the Jenkinsfile in each repository remains the Dockerfile build.
 ```
 #!groovy
 
