@@ -55,6 +55,6 @@ Size in bytes for which results larger than this are not stored in the query cac
 Size in bytes available to the query cache. About 40KB is needed for query cache structures, so setting a size lower than this will result in a warning. 0, the default before MariaDB 10.1.7, effectively disables the query cache. Starting from MariaDB 10.1.7, query_cache_type is automatically set to ON if the server is started with the query_cache_size set to a non-zero (and non-default) value.
 
 ### Slow query logging
-Finally the slow query logging will be activated and the threashold set to 5 seconds.
+Finally the slow query logging will be activated and the threshold set to 5 seconds.
 
 The above sources can be found on [Github](https://github.com/flavioaiello/MariaDB) and the custom mariadb docker images on [Docker Hub](https://hub.docker.com/r/flavioaiello/mariadb/).
