@@ -2,7 +2,7 @@ When deploying the official docker hub mariadb image, an unspecific default conf
 
 Based on the official images, the custom image as outlined below is recommended for a mariadb connection pool tandem with the great [Hikari](https://github.com/brettwooldridge/HikariCP) library reaching a basic performance level.
 
-## [Hikari](https://github.com/brettwooldridge/HikariCP)
+## Hikari
 The mariadb `wait_timeout` parameter is limited by the swarm overlay network constraint of terminating tcp connections after 15 minutes. In order to set the hikari `maxLifetime` parameter to 10 minutes, the `wait_timeout` parameter must be increased from `600` to `750` seconds as shown above.
 
 ## Swarm
