@@ -27,7 +27,7 @@ Taking container limits into account and calculating on startup buffer and cache
 The entrypoint excerpt below can be found on Github as referenced in the footer.
 ```
 ...
-sed -e "/innodb_buffer_pool_size[^_]\s*/c\innodb_buffer_pool_size = $(awk '{ print int($1*2/3)}' /sys/fs/cgroup/memory/memory.limit_in_bytes)" \
+sed -e "/innodb_buffer_pool_size[^_]\s*/c\innodb_buffer_pool_size = $(awk '{ print int($1*3/4)}' /sys/fs/cgroup/memory/memory.limit_in_bytes)" \
     -e "/tmp_table_size[^_]\s*/c\tmp_table_size = $(awk '{ print int($1/16)}' /sys/fs/cgroup/memory/memory.limit_in_bytes)" \
     -e "/max_heap_table_size[^_]\s*/c\max_heap_table_size = $(awk '{ print int($1/16)}' /sys/fs/cgroup/memory/memory.limit_in_bytes)" \
     -e "/query_cache_limit[^_]\s*/c\query_cache_limit = $(awk '{ print int($1/6000)}' /sys/fs/cgroup/memory/memory.limit_in_bytes)" \
@@ -57,4 +57,4 @@ Size in bytes available to the query cache. About 40KB is needed for query cache
 ### Slow query logging
 Finally the slow query logging will be activated and the threshold set to 5 seconds.
 
-The above sources can be found on [Github](https://github.com/flavioaiello/MariaDB) and the custom mariadb docker images on [Docker Hub](https://hub.docker.com/r/flavioaiello/mariadb/).
+The above sources can be found on [Github](https://github.com/flavioaiello/mariadb).
