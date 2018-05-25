@@ -13,7 +13,7 @@ The software supply chain encompasses all steps between development to productio
 ## Proposing USM, the «Universal Sharing Model»
 Obviously a generic model is abstract by design. So if you don't bother about, step over directly to the conclusions below.
 
-A generic model does not depend on vendors or technologies. Nesting technologies, making more and more software defined and thus continuously sophisticating far reaching automation, maybe at some point AI based, does not require to reinvent the wheel. The rules must be stable and clear. The aim is to create a simplified but coherent view on the relevant pieces:
+A generic model does not depend on vendors or implementations. Nesting technologies, making more and more software defined and thus continuously sophisticating far reaching automation, maybe at some point AI based, does not require to reinvent the wheel. The rules must be stable and clear. The aim is to create a simplified but coherent view on the relevant pieces:
 
 ![Universal Sharing Model](https://flavio.aiello.ch/assets/images/usm.png)
 
