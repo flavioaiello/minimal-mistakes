@@ -58,13 +58,14 @@ Technical management from a legacy point of view (imperative maintenance). Today
 ### Compute
 
 #### Hardware
-Dedicated: Physical hardware per entity
-Shared: Accomplished by hypervisor based (type 1 and 2) virtualization like KVM, ESX, LPAR, etc. protecting and exposing ressources from operating systems on top
+- Dedicated: Physical hardware per entity
+- Shared: Accomplished by hypervisor based (type 1 and 2) virtualization like KVM, ESX, LPAR, etc. protecting and exposing ressources from operating systems on top
 
 #### Operating System
 Running on any dedicated or shared hardware:
-Dedicated: Any per entity
-Shared: Accomplished by non-separation at all, BSD Jails, Sun Zones, LXC, Containers etc. protecting and exposing kernel syscalls from userland processes on top
+
+- Dedicated: Any per entity
+- Shared: Accomplished by non-separation at all, BSD Jails, Sun Zones, LXC, Containers etc. protecting and exposing kernel syscalls from userland processes on top
 
 #### Process
 Running on any dedicated or shared OS:
