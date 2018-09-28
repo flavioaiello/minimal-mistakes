@@ -1,4 +1,4 @@
-After many years working as a fullstack architect, currently I’m digging back deeper in to the security territory. Security does not only includes a technical point of view (how-), but also the security architecture (what-) and the security governance (why-domain). The according security standards are per example ISO/IEC 27001, NIST Cyber Security Framework and also older ones like COBIT etc.
+After many years working as a fullstack architect, currently I’m digging back deeper in to the security territory. Security does not only includes a technical point of view (how-), but also the security architecture (what-) and the security governance (why-domain). The according security standards are per example ISO/IEC 27001 or the NIST Cyber Security Framework. 
 
 This blog post is about how to accomplish multitenancy and the software supply chain from a compliance perspective.
 
@@ -36,9 +36,6 @@ Security must be economical adequate, thus globally do encryption at some level 
 1.	Define generic segregation rules based on «USM» (the sharing model above)
 2.	Challenge the rules with your business requirements and non-functionals (legal and regulation point of view)
 3.	Continuously adjust and improve the rules
-
-## Controls
-This chapter is still work in progress: Finding the relevant controls takes time... (ISO/IEC 2700... 27017/18, IGF, Cloud controls etc.) If you have any indications please drop me a line. Thank you
 
 ## «USM» Implementation Details
 
