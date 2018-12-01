@@ -1,23 +1,21 @@
-After many years working as a fullstack architect, currently I’m digging back deeper in to the security territory. Security does not only includes a technical point of view (how-), but also the security architecture (what-) and the security governance (why-domain). The according security standards are per example ISO/IEC 27001 or the NIST Cyber Security Framework. 
+«The best way to secure a server is to leave it off». 
 
-This blog post is about how to accomplish multitenancy and the software supply chain from a compliance perspective.
+Is isolation secure? Is sharing insecure? The latest advances in the sharing technology extend compute virtualization to the network and storage as well. So how secure are those abstraction layers?
 
-## Definitions
+The main objective is privacy. A privacy context is bound to those isolation boundaries and their relative strength.
 
-### Multitenancy
+## Multitenancy
 Multitenancy is the ability of systems to independently represent legal and/or organizational units, denominated below as «entity». This is accomplished by sharing capacities such as computing, communication and persistency. Setup and management of capacities both technically and organizationally concerned can take place in shared manner as well.
 
-### Software Supply Chain 
+## Software Supply Chain 
 The software supply chain encompasses all steps between development to production. The separation of environments requires data fixtures and synthetic data on all preproduction stages and a high degree of data management. Only if this can be ensured, then the specific degree of multitenancy can vary stage by stage.
 
-## Proposing USM, the «Universal Sharing Model»
-Obviously a generic model is abstract by design. So if you don't bother about, step over directly to the conclusions below.
+## Sharing
+Models are not bounded to vendors or implementations. Virtualization is the ability to abstract a lower level technology to a higher level. A shared hardware in fact, well known as virtual machine, is a hardware abstraction, so that multiple operating systems can coexist on a physical machine. The same pattern is now applied to network and storage domain.
 
-A generic model does not depend on vendors or implementations. Nesting technologies, making more and more software defined and thus continuously sophisticating far reaching automation, maybe at some point AI based, does not require to reinvent the wheel. The rules must be stable and clear. The aim is to create a simplified but coherent view on the relevant pieces:
+![Sharing Model](https://flavio.aiello.ch/assets/images/usm.png)
 
-![Universal Sharing Model](https://flavio.aiello.ch/assets/images/usm.png)
-
-The specific degree of reuse between of «share all» and «share nothing» eg. fully dedicated is motivated by an economic point of view, while legal and regulatory compliance must be followed. Sharing of capacities such as compute, network and storage and far-reaching automation do also represent a technical and organizational challange.
+The specific degree of reuse between of «share all» and «share nothing» eg. fully dedicated is motivated by an economic point of view, while legal and regulatory compliance must be followed. Sharing of capacities such as compute, network and storage and far-reaching automation do also represent a technical and organizational challange. The one million dollar question is: Which degree of sharing is adequate to guarantee the required level of privacy context?
 
 ## Conclusions
 There is no need to reinvent the wheel on every new technology arising. Usually contradictions are indicating a redefinition of something existent, thus representing just an implementation detail. 
