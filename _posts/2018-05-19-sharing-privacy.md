@@ -36,7 +36,7 @@ Security must be economical adequate, thus globally do encryption at some level 
 
 ## The sharing model
 
-### The Management layer
+### Management domain
 
 #### Organization
 - Dedicated: Named Individuals on same company as the entity itself
@@ -48,13 +48,13 @@ Technical management from a legacy point of view (imperative maintenance). Today
 - Dedicated: Management consoles and orchestrators per entity
 - Shared: Networks like VPN, Management Conosoles, Orchestrators etc.
 
-### Compute Domain
+### Compute domain
 
 #### Hardware
 - Dedicated: One physical hardware per OS
 - Shared: Virtual hardware accomplished by hypervisor based virtualization like KVM, ESX, LPAR, etc.
 
-#### Operating System
+#### Operating system
 - Dedicated: One OS per process
 - Shared: OS sharing accomplished by plain old multitasking, BSD Jails, Sun Zones, LXC, Containers etc. 
 
@@ -66,7 +66,7 @@ Technical management from a legacy point of view (imperative maintenance). Today
 - Dedicated: One application per privacy context
 - Shared: Application sharing accomplished by propritary methods
 
-### Network Domain
+### Network domain
 
 #### Interface
 - Dedicated: Physical interface per entity
@@ -84,7 +84,7 @@ Technical management from a legacy point of view (imperative maintenance). Today
 - Dedicated: Single listener software service per entity
 - Shared: Multiple software services on the same listener 
 
-### Storage Domain
+### Storage domain
 
 #### Device
 - Dedicated: Physical device per entity
@@ -94,7 +94,7 @@ Technical management from a legacy point of view (imperative maintenance). Today
 - Dedicated: Logical volume per entity
 - Shared: Logical volume accomplished 
 
-#### File System
+#### File system
 * Dedicated: Mount point per entity 
 * Shared: One mount point accomplished by NFS, NIFS, SMB, etc.
 
