@@ -1,5 +1,3 @@
-«The best way to secure a server is to leave it off». 
-
 Is isolation secure? Is sharing insecure? The latest advances in the sharing technology extend compute virtualization to the network and storage as well. So how secure are those abstraction layers?
 
 The main objective is privacy. A privacy context is bound to those isolation boundaries and their relative strength.
