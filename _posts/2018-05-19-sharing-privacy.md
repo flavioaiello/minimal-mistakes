@@ -28,16 +28,15 @@ Reducing the specific degree of sharing does not necessairly increase the level 
 
 Security must be economical adequate, thus globally do encryption at some level as countermeasure of non quantified risks is probably not rationale.
 
- 
 ## Recommendations
 
-1.	Define generic segregation rules based on «USM» (the sharing model above)
-2.	Challenge the rules with your business requirements and non-functionals (legal and regulation point of view)
-3.	Continuously adjust and improve the rules
+1.	Define your segregation methods for compute, network and storage as well
+2.	Challenge your methods with your business requirements and non-functionals (legal and regulation point of view)
+3.	Continuously adjust and improve
 
-## «USM» Implementation Details
+## The sharing model
 
-### Management
+### The Management layer
 
 #### Organization
 - Dedicated: Named Individuals on same company as the entity itself
@@ -49,75 +48,56 @@ Technical management from a legacy point of view (imperative maintenance). Today
 - Dedicated: Management consoles and orchestrators per entity
 - Shared: Networks like VPN, Management Conosoles, Orchestrators etc.
 
-
-### Compute
+### Compute Domain
 
 #### Hardware
-- Dedicated: Physical hardware per entity
-- Shared: Accomplished by hypervisor based (type 1 and 2) virtualization like KVM, ESX, LPAR, etc. protecting and exposing ressources top operating systems on top
+- Dedicated: One physical hardware per OS
+- Shared: Virtual hardware accomplished by hypervisor based virtualization like KVM, ESX, LPAR, etc.
 
 #### Operating System
-Running on any dedicated or shared hardware:
-
-- Dedicated: Any per entity
-- Shared: Accomplished by non-separation at all, BSD Jails, Sun Zones, LXC, Containers etc. protecting and exposing kernel syscalls to userland processes on top
+- Dedicated: One OS per process
+- Shared: OS sharing accomplished by plain old multitasking, BSD Jails, Sun Zones, LXC, Containers etc. 
 
 #### Process
-Running on any dedicated or shared OS:
-
-- Dedicated: Binary self-contained executable per entity
-- Shared: Accomplished by application runtimes like JVM, .NET CLR, Tomcat, Weblogic, Wildfly, etc. protecting and exposing logical calls to applications on top
+- Dedicated: One process per application
+- Shared: Process sharing accomplished by application runtimes like JVM, .NET CLR, Tomcat, Weblogic, Wildfly, etc.
 
 #### Application
-Running on any dedicated or shared processes:
+- Dedicated: One application per privacy context
+- Shared: Application sharing accomplished by propritary methods
 
-- Dedicated: Single software service instance per entity
-- Shared: Logical multi-instance software service
-
-### Network
+### Network Domain
 
 #### Interface
 - Dedicated: Physical interface per entity
 - Shared: Virtual interface accomplished by shared hardware or shared operating system
 
 #### Domain
-On top of any dedicated or shared interface:
-
 - Dedicated: Broadcast domain delimited by dedicated network cables and devices per entity
 - Shared: Virtual broadcast domains delimited by tagging or encapsulation technologies like VLAN, VXLAN, MPLS, GRE, etc.
 
 #### Address
-On top of any dedicated or shared domain:
-
 - Dedicated: Specific routable addressing per entity
 - Shared: Overlay addressing accomplished by extensive NAT and encapsulation methods
 
 #### Socket
-On top of any dedicated or shared address:
-
 - Dedicated: Single listener software service per entity
 - Shared: Multiple software services on the same listener 
 
-### Storage
+### Storage Domain
 
 #### Device
 - Dedicated: Physical device per entity
 - Shared: Virtual device accomplished by partitioning
 
 #### Volume
-On top of any dedicated or shared Device:
-
 - Dedicated: Logical volume per entity
 - Shared: Logical volume accomplished 
 
 #### File System
-On top of any dedicated or shared volume:
-
 * Dedicated: Mount point per entity 
 * Shared: One mount point accomplished by NFS, NIFS, SMB, etc.
 
 #### File
-On top of any dedicated or shared file system:
-
 * Dedicated: Clear delimited folders and files per entity
 * Shared: Non delimited data persistency fully depending on software service logic (application)
