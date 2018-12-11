@@ -44,7 +44,7 @@ Security must be economical adequate, thus globally do encryption at some level 
 Technical management from a legacy point of view (imperative maintenance). Today «orchestration» for new declarative technologies eg. cloud and container based services. Maybe there will be a new definition for AI based management, but the topic will remain the same.
 
 - Dedicated: Management consoles and orchestrators per entity
-- Shared: Networks like VPN, Management Conosoles, Orchestrators etc.
+- Shared: Networks like VPN, Management Consoles, Orchestrators etc.
 
 ### Compute domain
 
