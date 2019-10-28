@@ -1,4 +1,3 @@
-# Scrum Guide Distilled
 Summary in preparation of the PSM I certification based on the [official Scrum guide]([https://www.scrumguides.org/scrum-guide.html](https://www.scrumguides.org/scrum-guide.html)).
 
 ## Definition
