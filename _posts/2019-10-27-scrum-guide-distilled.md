@@ -147,14 +147,14 @@ The Sprint Planning is a prescribed Scrum event with the prerequisites
 - Product Backlog  
 - latest product Increment,  
 - projected capacity (Development Team)  
-- past performance (Velocity)  
+- past performance (Velocity)
+
 and below essential characteristics:  
 - Collaborative plan by the entire Scrum Team,  
 - Time-boxed to maximum of 8 hours for a one month Sprint (eg. shortened for shorter Sprints),  
-- Defines the deliverable product increment as Sprint Goal,  
+- Defines the deliverable product increment as Sprint Goal (Scrum Team),  
 - Identifies the Product Backlog Items that would achieve the Sprint Goal,  
-- Collaborates on understanding of the work that must be achieved,
-
+- Collaborates on understanding of the work that must be achieved and
 - How will the work needed to deliver the increment be achieved.
 
 The Product Backlog items selected and a plan for delivering them is the Sprint Backlog. The Sprint starts with Sprint Backlog items decomposed by the end of this meeting, often to units of one day or less. The Development Team self-organizes to undertake the work in the Sprint Backlog, both during Sprint Planning and as needed throughout the Sprint. The Development Team may also invite other people to attend to provide technical or domain advice.
