@@ -25,7 +25,7 @@ Each component serves a specific purpose and is essential to succeed.
 
 Making efficacy and work techniques visible enables to continuously improve the product, the team, and the working environment. The essence is a small highly flexible and adaptive team scalable to several teams to cope with corporate scale collaboration to release complex work to arbitrary environments.
 
-## Rules
+## Pillars of Empiricism
 
 Scrum is founded on empiricism and NOT a process, technique or definitive method. Uncertainty decreases over time as more is known improving predictability and risks likelihood estimation. Empirical process control (empiricism) is based on  
 - transparency,  
