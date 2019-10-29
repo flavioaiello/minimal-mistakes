@@ -1,4 +1,4 @@
-Summary in preparation of the PSM I certification based on the [official Scrum guide](https://www.scrumguides.org/scrum-guide.html).
+Summary in preparation of the PSM I and PSM II certification based on the [official Scrum guide](https://www.scrumguides.org/scrum-guide.html).
 
 ## Definition
 Scrum is a process framework to deal with nowadays technology, market, and environmental complexity, within you can employ various processes and techniques for 
