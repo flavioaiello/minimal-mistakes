@@ -1,4 +1,4 @@
-Summary in preparation of the PSM I and PSM II certification based on the [official Scrum guide](https://www.scrumguides.org/scrum-guide.html).
+Summary in preparation of the PSM and PSPO certification based on the [official Scrum guide](https://www.scrumguides.org/scrum-guide.html).
 
 ## Definition
 Scrum is a process framework to deal with nowadays technology, market, and environmental complexity, within you can employ various processes and techniques for 
@@ -244,7 +244,7 @@ Product Backlog items have the attributes of
 - order,  
 - estimate,  
 - value and  
-- test descriptions that will prove its completeness when "Done".  
+- optionaly test descriptions that will prove its completeness when "Done".
   
 When working with multiple Scrum Teams on the same product, one Product Backlos is used. A Product Backlog attribute (=epics) that groups items may then be employed.
 
