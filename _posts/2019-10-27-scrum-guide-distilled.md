@@ -1,4 +1,4 @@
-Summary in preparation of the PSM and PSPO certification based on the [official Scrum guide](https://www.scrumguides.org/scrum-guide.html) and the [sample questions discussion](https://mlapshin.com/index.php/blog/scrum-questions/).
+Summary in preparation of the PSM, PSPO and PSD certification based on the [official Scrum guide](https://www.scrumguides.org/scrum-guide.html) and the [sample questions discussion](https://mlapshin.com/index.php/blog/scrum-questions/).
 
 ## Definition
 Scrum is a process framework to deal with nowadays technology, market, and environmental complexity, within you can employ various processes and techniques for 
