@@ -42,3 +42,8 @@ Making software resilient and portable is based on loose coupling dependencies t
 Zero trust encompasses the protection of the physical infrastructure and the build of basic bricks like identity federation to spark the development of secure portable reliable services. Physical representation of the user or service location has vanished and there is no more default safe place. Zero trust describes a standard approach to secure portable and decoupled services across traditional data centers, clouds or even edge or mobile computing. Zero trust is a traditional least privilege principle applied to services and data instead of network or infrastructure, thus providing isolation between workloads followed by automated vulnerability management, no implicit trusted communication and least privilege access control to data. 
 
 As such, security is no more the last deliverable of a traditional project but already incorporated as main pillar during any stage of any creational process. Embracing zero trust makes economical sense due to the high degree of automation. The security principles provide benefits to the developers and security staff to continuously improve and deliver high standing data protection and reliable services.
+
+## Further Readings
+
+*   [Zero Trust by Microsoft](https://www.microsoft.com/en-us/security/business/zero-trust)
+*   [BeyondCorp & BeyondProd by Google](https://cloud.google.com/beyondcorp)
