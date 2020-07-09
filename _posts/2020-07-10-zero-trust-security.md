@@ -16,18 +16,13 @@ The sharing of operating systems eg. containerization introduced a new level of 
 
 Containerization raised the utilization ratio of infrastructure even more efficient than virtualization. Furthermore it made cloud computing through identity federation and distributed stateless software design became reality. At the same time, containers mitigated lateral movement, if an attacker would breach the perimeter.
 
-## Reality
-
+## Reality
 With no fundamental physical degree of isolation, users working from anywhere and services being produced everywhere, there is no more crocodile pit nor a wall perimeter. Actual security concepts are now a zero trust model where security is addressed the same way for services as it is for users, regardless of the network. As such, traditional firewalls may still protect infrastructure, but portable services need to be securely run everywhere.
 
-
-## Consumerization
-
+## Consumerization
 From its earliest days, low cost consumer technology or commodity hardware prevailed. The cloud native architecture is designed for commodity based computing. Thanks to portability, distributing multiple low cost stateless software instances across machines is load and fault tolerant without affecting the user experience. When it comes to stateful software, the same orchestration mechanism reschedules containers across multiple machines, so that workload quorums are provided alive.
 
-
-## Decoupling
-
+## Decoupling
 Making software resilient and portable is based on loose coupling dependencies to the infrastructure and between services with a high degree of cohesion within the containers. This is achieved by read only containers that need to be rebuilt and distributed as required by vulnerabilities and their according risk. The imposed deterministic work pattern is required to roll out services repeatedly consistently through continuous runtime reconciliation. The deterministic work pattern makes the software lifecycle programmable and more secure, maintainable, reproducible and scalable, even more consistent and uniform between teams. As such, developers are enabled to produce secure software more efficiently.
 
 |Perimeter|Zero Trust|
@@ -42,9 +37,8 @@ Making software resilient and portable is based on loose coupling dependencies t
 |Infrequent but therefore extensive changes with higher risk incidence.|Simple, low risk, small frequent standardized and automated changes.|
 |Workloads are isolated physically.|Workloads are isolated logically.|
 
-
 ## Embrace the change
 
-Zero trust encompasses the protection of the physical infrastructure and the build of basic bricks like identity federation to spark the development of secure portable reliable services. Physical representation of the user or service location has vanished and there is no more default safe place. Zero trust describes a standard approach to secure portable and decoupled services across traditional data centers, clouds or even edge or mobile computing. Zero trust is a traditional whitelist approach applied to services and data instead of network or infrastructure, thus providing isolation between workloads followed by automated vulnerability management, no implicit trusted communication and least privilege access control to data. 
+Zero trust encompasses the protection of the physical infrastructure and the build of basic bricks like identity federation to spark the development of secure portable reliable services. Physical representation of the user or service location has vanished and there is no more default safe place. Zero trust describes a standard approach to secure portable and decoupled services across traditional data centers, clouds or even edge or mobile computing. Zero trust is a traditional least privilege principle applied to services and data instead of network or infrastructure, thus providing isolation between workloads followed by automated vulnerability management, no implicit trusted communication and least privilege access control to data. 
 
 As such, security is no more the last deliverable of a traditional project but already incorporated as main pillar during any stage of any creational process. Embracing zero trust makes economical sense due to the high degree of automation. The security principles provide benefits to the developers and security staff to continuously improve and deliver high standing data protection and reliable services.
