@@ -26,7 +26,7 @@ From its earliest days, low cost consumer technology or commodity hardware preva
 Making software resilient and portable is based on loose coupling dependencies to the infrastructure with a high degree of cohesion within the services. This is achieved by read only containers that need to be rebuilt and distributed as required by vulnerabilities and their according risk. The imposed deterministic work pattern is required to roll out services repeatedly consistently through continuous runtime reconciliation. The deterministic work pattern makes the software lifecycle programmable and more secure, maintainable, reproducible and scalable, even more consistent and uniform between teams. As such, developers are enabled to produce secure software more efficiently.
 
 ## Evolution
-The Table below shows how the aspects of traditional infrastructure perimeter security model compared to zero trust security:
+The table below shows how the aspects of traditional infrastructure perimeter security model compared to zero trust security:
 
 |Perimeter|Zero Trust|
 |--- |--- |
