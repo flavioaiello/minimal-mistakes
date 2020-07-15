@@ -43,7 +43,7 @@ The table below shows how the aspects of traditional infrastructure perimeter se
 |Workloads are isolated physically.|Workloads are isolated logically.|
 
 
-Security Principles
+## Security Principles
 The outlined zero trust topology requires the following security principles:
 
 |Topic|Principle|
