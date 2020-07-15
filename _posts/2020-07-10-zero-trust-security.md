@@ -16,7 +16,7 @@ The sharing of operating systems eg. containerization introduced a new level of 
 
 Containerization raised the utilization ratio of infrastructure even more efficient than virtualization. Furthermore it made cloud computing through identity federation and distributed stateless software design became reality. At the same time, containers mitigated lateral movement, if an attacker would breach the perimeter.
 
-![Zero Trust compared to Perimeter](assets/images/zerotrustperimeter.png)
+![Zero Trust compared to Perimeter](https://flavio.aiello.ch/assets/images/zerotrustperimeter.png)
 
 ## Reality
 With no fundamental physical degree of isolation, users working from anywhere and services being produced everywhere, there is no more crocodile pit nor a wall perimeter. Actual security concepts are now a zero trust model where security is addressed the same way for services as it is for users, regardless of the network. As such, traditional firewalls may still protect infrastructure, but portable services need to be securely run everywhere.
