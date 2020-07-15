@@ -16,6 +16,8 @@ The sharing of operating systems eg. containerization introduced a new level of 
 
 Containerization raised the utilization ratio of infrastructure even more efficient than virtualization. Furthermore it made cloud computing through identity federation and distributed stateless software design became reality. At the same time, containers mitigated lateral movement, if an attacker would breach the perimeter.
 
+![Zero Trust compared to Perimeter](assets/images/zerotrustperimeter.png)
+
 ## Reality
 With no fundamental physical degree of isolation, users working from anywhere and services being produced everywhere, there is no more crocodile pit nor a wall perimeter. Actual security concepts are now a zero trust model where security is addressed the same way for services as it is for users, regardless of the network. As such, traditional firewalls may still protect infrastructure, but portable services need to be securely run everywhere.
 
@@ -40,9 +42,26 @@ The table below shows how the aspects of traditional infrastructure perimeter se
 |Infrequent but therefore extensive changes with higher risk incidence.|Simple, low risk, small frequent standardized and automated changes.|
 |Workloads are isolated physically.|Workloads are isolated logically.|
 
+
+Security Principles
+The outlined zero trust topology requires the following security principles:
+
+|Topic|Principle|
+|--- |--- |
+|Edge	|Service exposure is protected by volume based attack mitigation and authentication at the edge. Traditional firewalls on the edge still protect the physical infrastructure against the internet|
+|Crosstalk|The infrastructure is fully restricted so that no default machine to machine network traffic is allowed|
+|Artifacts|Only artifacts of known origin are allowed to be executed|
+|Runtime|Only machines are allowed to execute artifacts that comply with the set of execution requirements|
+|Policy|Service to Service communication is automatically validated and complying to policies. Services are only allowed to communicate each other by mutual authentication|
+|Automation|Source configuration management (SCM) based infrastructure with continuous runtime reconciliation (GitOps) and security observability|
+|Isolation|Execution breach mitigation by adequate measures such as shell less machines for root- and deamonless oci execution with sandboxing|
+|Organisation|Security must rely on automation and not on individuals|
+
+The implementation of above principles enable scaling while enforcing security and positively affecting the development experience.
+
 ## Embrace the change
 
-Zero trust encompasses the protection of the physical infrastructure and the build of basic bricks like identity federation, declarative edge networking and service mesh to spark the development of secure portable reliable services. Physical representation of the user or service location has vanished and there is no more default safe place. Zero trust describes a standard approach to secure portable and decoupled services across traditional data centers, clouds or even edge or mobile computing. Zero trust is a traditional least privilege principle applied to services and data instead of network or infrastructure, thus providing isolation between workloads followed by automated vulnerability management, no implicit trusted communication and least privilege access control to data. 
+Zero trust encompasses the protection of the physical infrastructure and the build of basic bricks like identity federation, declarative edge networking and service mesh to spark the development of secure portable reliable services. Physical representation of the user or service location has vanished and there is no more default safe place. Zero trust describes a standard approach to secure portable and decoupled services across traditional data centers, hybrid and public clouds. Zero trust is a traditional least privilege principle applied to services and data instead of network or infrastructure, thus providing isolation between workloads followed by automated vulnerability management, no implicit trusted communication and least privilege access control to data.
 
 As such, security is no more the last deliverable of a traditional project but already incorporated as main pillar during any stage of any creational process. Embracing zero trust makes economical sense due to the high degree of automation. The security principles provide benefits to the developers and security staff to continuously improve and deliver high standing data protection and reliable services.
 
